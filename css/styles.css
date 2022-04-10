@@ -6,6 +6,7 @@
   --accent-color: #2196f3;
   --backg-color: #e5e5e5;
   --backg-color2: #F5F4FA;
+  --hero-color: #2f303a;
 
 }
 p,h1,h2,h3,h4,h5,h6{
@@ -41,8 +42,6 @@ body {
 
 .header {
   background-color: var(--first-btn-color);
-padding-bottom: 32px; 
-padding-top: 32px;
 border-bottom: 1px solid #ECECEC;
 
 }
@@ -57,6 +56,15 @@ border-bottom: 1px solid #ECECEC;
 .header-item{
   margin-left: 50px;
 }
+.header-list {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-left: 93px;
+}
+.header-list a{
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 
 .container-flax {
   justify-content: space-between;
@@ -67,14 +75,10 @@ border-bottom: 1px solid #ECECEC;
 .header-nav {
   align-items: center;
 }
-.header-list{
-  margin-left: 94px;
-}
-.header-adres{
-  margin-right: 50px;
-}
 
-
+.header-items-adres{
+  margin-left: 50px;
+}
 
 
 .header-logo{
@@ -150,8 +154,8 @@ border-bottom: 1px solid #ECECEC;
 }
                                                             /* HERO */
 .hero {
-  background-color: #2f303a;
- padding: 200px 452px 280px 452px ;
+  background-color: var(--hero-color);
+ padding: 200px 0px;
  
  
 
@@ -166,9 +170,9 @@ border-bottom: 1px solid #ECECEC;
   text-transform: uppercase;
   color: var(--first-btn-color);
   max-width: 696px;
-  margin-bottom: 30px;
   align-items: center;
   margin: auto;
+  margin-bottom: 30px;
   
 }
 .hero-btn {
@@ -182,18 +186,22 @@ border-bottom: 1px solid #ECECEC;
   color: var(--first-btn-color);
   border-radius: 4px;
   max-width: 200px;
+  max-height: 50px;
   border: 0;
-  cursor: pointer;
   display: flex;
-  align-items: center;
+  cursor: pointer;
   margin: auto;
+  padding: 10px 32px;
+  align-items: center;
+  white-space: nowrap;
 
 }
+
 
                                                             /* ABOUT */
 .about{
   background-color: var(--first-btn-color);
-  padding: 94px 215px 94px 215px;
+  padding: 94px 0px;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -208,7 +216,7 @@ border-bottom: 1px solid #ECECEC;
   margin-bottom: 10px;
 
 }
-.about-item:last-child{
+.about-item:first-child{
   margin-left: 0;
 }
   .about-item{
@@ -228,7 +236,7 @@ border-bottom: 1px solid #ECECEC;
                                                             /* PRICES */
 .prices{
   background-color:var(--first-btn-color );
-padding: 0px 215px 94px 215px;
+padding: 0px 0px 94px 0px;
 }
 .prices-title{
   font-weight: 700;
@@ -252,20 +260,29 @@ margin-right: 30px;
                                                        
 .command {
   background-color: var(--backg-color2);
-padding: 94px 215px 94px 215px;
+padding: 94px 0px;
   padding-top: 94px;
   padding-bottom: 94px;
 }
 .command-list{
   display: flex;
 }
-.command-title-item{
+
+.command-item{
+    border:none;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+0px 1px 1px rgba(0, 0, 0, 0.14),
+0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+
+}
+.command-title-item {
   border: 1px solid #ffffff;
   background-color: #ffffff;
   padding-top: 30px;
   padding-bottom: 30px;
+  border-radius: 0px 0px 4px 4px;
 }
-
 
 .command-title{
   font-weight: 700;
@@ -374,7 +391,7 @@ color: rgba(255, 255, 255, 0.6);
                                                             /* HERO 1 */
 .hero1{
   background-color: var(--first-btn-color);
-  margin: 94px 215px;
+  padding: 94px 0px;
 }
 
 .hero1-btn.btn1{
@@ -387,7 +404,7 @@ color: rgba(255, 255, 255, 0.6);
   color: var(--first-btn-color);
 
 }
-.hero1-btn-all{
+ .hero1-list1{
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
@@ -402,7 +419,6 @@ color: rgba(255, 255, 255, 0.6);
   
   
 .hero1-btn{
-  margin-bottom: 8px;
   background-color: var(--backg-color2);
   font-family: inherit;
   font-weight: 500;
@@ -414,6 +430,7 @@ color: rgba(255, 255, 255, 0.6);
   border-radius: 4px;
   border: 0;
   cursor: pointer;
+  padding: 6px 22px;
 }
 
 .hero1-btn:hover,
@@ -450,7 +467,10 @@ justify-content: center;
 
 
 .portfolio-title-item{
-  border: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-top: 0px;
   padding: 20px 24px;
   
 }
